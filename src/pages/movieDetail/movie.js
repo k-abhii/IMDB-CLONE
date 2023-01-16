@@ -16,7 +16,7 @@ const Movie = () => {
     };
     getData();
     window.scrollTo(0, 0);
-  }, []);
+  }, [id]);
 
   return (
     <div className="movie">
@@ -91,6 +91,7 @@ const Movie = () => {
             href={currentMovieDetail.homepage}
             target="_blank"
             style={{ textDecoration: "none" }}
+            rel="noopener noreferrer"
           >
             <p>
               <span className="movie__homeButton movie__Button">
@@ -104,6 +105,7 @@ const Movie = () => {
             href={"https://www.imdb.com/title/" + currentMovieDetail.imdb_id}
             target="_blank"
             style={{ textDecoration: "none" }}
+            rel="noopener noreferrer"
           >
             <p>
               <span className="movie__imdbButton movie__Button">
